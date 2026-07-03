@@ -25,33 +25,67 @@
 <main>
 
 <h2>CERN HTTPd (1990)</h2>
-<p>First web server created by Tim Berners-Lee.</p>
+<p>
+  The first web server was created by Tim Berners-Lee at CERN, and it introduced the HTTP request/response model and hosted the
+  first website. This single-host model established the client/server pattern that underpins the web today.
+</p>
 
-<h2>Apache</h2>
-<p>Open-source server that became very popular.</p>
+<h2>NCSA HTTPd (1993)</h2>
+<p>
+  NCSA HTTPd added CGI support and easier configuration which enabled dynamic content generation and wider adoption.
+  Its code and ideas were the foundation for later servers.
+</p>
 
-<h2>Nginx</h2>
-<p>High performance server used for large websites.</p>
+<h2>Apache HTTP Server (1995)</h2>
+<p>
+  Apache grew from patches to NCSA HTTPd and became the dominant open-source server in the late 1990s due to its 
+  modular architecture, community support, and cross platform stability.
+</p>
 
+<h2>Nginx and the C10K problem (2004)</h2>
+<p>
+  Nginx was designed to handle many simultaneous connections with an event driven architecture. This made it ideal for 
+  high concurrency and low memory environments.
+</p>
+
+<h2>Timeline</h2>
 <table border="1">
 <tr>
   <th>Year</th>
   <th>Server</th>
+  <th>Why it mattered</th>
 </tr>
 <tr>
   <td>1990</td>
   <td>CERN HTTPd</td>
+  <td>Introduced HTTP and the first website</td>
+</tr>
+<tr>
+  <td>1993</td>
+  <td>NCSA HTTPd</td>
+  <td>CGI and easier configuration</td>
 </tr>
 <tr>
   <td>1995</td>
   <td>Apache</td>
+  <td>Open-source modular server</td>
 </tr>
 <tr>
   <td>2004</td>
   <td>Nginx</td>
+  <td>Event driven with high concurrency</td>
 </tr>
 </table>
 
+<section>
+  <h3>Why these milestones matter</h3>
+  <p>
+    Each milestone introduced a core capability: the HTTP model (CERN), dynamic content (NCSA), extensibility and
+    community development (Apache), and high concurrency and event driven design (Nginx). These shaped how servers are 
+    built and deployed today.
+  </p>
+</section>
+  
 </main>
 
 <footer>
