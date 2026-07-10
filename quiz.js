@@ -50,7 +50,7 @@ results += "<p class='incorrect'>Question 3: Incorrect. Correct answer: Nginx</p
 
 
 let q4 = document.querySelector('input[name="q4"]:checked');
-if(q4 && q4.value=="UDP"){
+if(q4 && q4.value=="QUIC"){
 
 score++;
 
