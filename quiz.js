@@ -25,13 +25,14 @@ results += "<p class='incorrect'>Question 2: Incorrect. Correct answer: Tim Bern
 
 
 // Q3 Multiple Choice
+// Q3 Multiple Choice
 let q3 = document.querySelector('input[name="q3"]:checked');
-if(q3 && q3.value=="Nginx")
-score++;
-results += "<p class='correct'>Question 3: Correct</p>";
-}else{
-results += "<p class='incorrect'>Question 3: Incorrect. Correct answer: Nginx</p>";
 
+if (q3 && q3.value == "Nginx") {
+    score++;
+    results += "<p class='correct'>Question 3: Correct</p>";
+} else {
+    results += "<p class='incorrect'>Question 3: Incorrect. Correct answer: Nginx</p>";
 }
 
 
@@ -41,7 +42,7 @@ if(q4 && q4.value=="QUIC"){
 score++;
 results += "<p class='correct'>Question 4: Correct</p>";
 }else{
-results += "<p class='incorrect'>Question 4: Incorrect. Correct answer: UDP</p>";
+results += "<p class='incorrect'>Question 4: Incorrect. Correct answer: QUIC</p>";
 
 }
 
