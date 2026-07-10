@@ -2,96 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Web Server Quiz</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Web Server Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Web Server Knowledge Quiz</h1>
-</header>
+    <header>
+        <h1>Web Server Knowledge Quiz</h1>
+        <p>Test what you learned about the evolution of web servers.</p>
+    </header>
 
-<!-- nav menu -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="modern.html">Modern</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
 
-<!-- quiz -->
-<main>
-<h2>Test Your Knowledge</h2>
-<p>Complete the quiz below to see how much you learned about web servers.</p>
-<form id="quizForm">
+        <h2>Self Assessment Quiz</h2>
 
-<h3>1. Fill in the blank</h3>
-<p>Which protocol provides secure communication between a browser and a web server?</p>
+        <p>
+            Complete the quiz below. Your score and correct answers will appear
+            immediately after you submit.
+        </p>
 
-<input type="text" id="q1">
+        <form id="quizForm">
 
-<hr>
+            <div class="question">
 
-<h3>2. Multiple Choice</h3>
-<p>Who created the first web server?</p>
+                <h3>Question 1 (Fill in the Blank)</h3>
 
-<input type="radio" name="q2" value="Bill Gates"> Bill Gates<br>
-<input type="radio" name="q2" value="Tim Berners-Lee"> Tim Berners-Lee<br>
-<input type="radio" name="q2" value="Steve Jobs"> Steve Jobs<br>
-<input type="radio" name="q2" value="Mark Zuckerberg"> Mark Zuckerberg
+                <p>Which protocol securely transfers web pages?</p>
 
-<hr>
+                <input type="text" id="q1" placeholder="Type your answer">
 
-<h3>3. Multiple Choice</h3>
-<p>Which web server solved the C10K problem?</p>
+            </div>
 
-<input type="radio" name="q3" value="Apache"> Apache<br>
-<input type="radio" name="q3" value="Nginx"> Nginx<br>
-<input type="radio" name="q3" value="IIS"> IIS<br>
-<input type="radio" name="q3" value="Tomcat"> Tomcat
+            <hr>
 
-<hr>
+            <div class="question">
 
-<h3>4. Multiple Choice</h3>
+                <h3>Question 2 (Multiple Choice)</h3>
 
-<p>HTTP/3 uses which transport protocol?</p>
+                <p>Who created the first web server?</p>
 
-<input type="radio" name="q4" value="TCP"> TCP<br>
-<input type="radio" name="q4" value="QUIC"> QUIC<br>
-<input type="radio" name="q4" value="FTP"> FTP<br>
-<input type="radio" name="q4" value="SMTP"> SMTP
+                <label><input type="radio" name="q2" value="Bill Gates"> Bill Gates</label><br>
 
-<hr>
+                <label><input type="radio" name="q2" value="Tim Berners-Lee"> Tim Berners-Lee</label><br>
 
-<h3>5. Select All That Apply</h3>
-<p>Select ALL modern web server technologies.</p>
+                <label><input type="radio" name="q2" value="Steve Jobs"> Steve Jobs</label><br>
 
-<input type="checkbox" name="q5" value="Cloud Computing"> Cloud Computing<br>
-<input type="checkbox" name="q5" value="HTTP/3"> HTTP/3<br>
-<input type="checkbox" name="q5" value="Edge Computing"> Edge Computing<br>
-<input type="checkbox" name="q5" value="Floppy Disk"> Floppy Disk
-<br><br>
-<button type="button" onclick="gradeQuiz()">Submit Quiz</button>
-<button type="reset" onclick="resetQuiz()">Reset Quiz</button>
+                <label><input type="radio" name="q2" value="Mark Zuckerberg"> Mark Zuckerberg</label>
 
-</form>
+            </div>
 
-<div id="results"></div>
+            <hr>
 
-</main>
+            <div class="question">
 
-<footer>
-    <p>IT 3203 Class Project</p>
-</footer>
+                <h3>Question 3 (Multiple Choice)</h3>
 
-<script src="quiz.js"></script>
+                <p>Which web server solved the C10K problem?</p>
+
+                <label><input type="radio" name="q3" value="Apache"> Apache</label><br>
+
+                <label><input type="radio" name="q3" value="Nginx"> Nginx</label><br>
+
+                <label><input type="radio" name="q3" value="IIS"> IIS</label><br>
+
+                <label><input type="radio" name="q3" value="Tomcat"> Tomcat</label>
+
+            </div>
+
+            <hr>
+
+            <div class="question">
+
+                <h3>Question 4 (Multiple Choice)</h3>
+
+                <p>HTTP/3 uses which protocol?</p>
+
+                <label><input type="radio" name="q4" value="TCP"> TCP</label><br>
+
+                <label><input type="radio" name="q4" value="QUIC"> QUIC</label><br>
+
+                <label><input type="radio" name="q4" value="FTP"> FTP</label><br>
+
+                <label><input type="radio" name="q4" value="SMTP"> SMTP</label>
+
+            </div>
+
+            <hr>
+
+            <div class="question">
+
+                <h3>Question 5 (Select All That Apply)</h3>
+
+                <p>Select every modern web server technology.</p>
+
+                <label><input type="checkbox" name="q5" value="Cloud Computing"> Cloud Computing</label><br>
+
+                <label><input type="checkbox" name="q5" value="HTTP/3"> HTTP/3</label><br>
+
+                <label><input type="checkbox" name="q5" value="Edge Computing"> Edge Computing</label><br>
+
+                <label><input type="checkbox" name="q5" value="Floppy Disk"> Floppy Disk</label>
+
+            </div>
+
+            <br>
+
+            <button type="button" onclick="gradeQuiz()">
+                Submit Quiz
+            </button>
+
+            <button type="reset" onclick="resetQuiz()">
+                Reset Quiz
+            </button>
+
+        </form>
+
+        <div id="results"></div>
+
+    </main>
+
+    <footer>
+
+        <p>IT 3203 Class Project | Nathan Wymer</p>
+
+    </footer>
+
+    <script src="quiz.js"></script>
 
 </body>
+
 </html>
 
 
