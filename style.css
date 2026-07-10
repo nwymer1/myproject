@@ -58,3 +58,57 @@ img {
   margin: 20px auto;
   max-width: 100%;
 }
+
+
+
+form{
+
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+
+}
+
+input[type=text]{
+width:300px;
+padding:10px;
+margin-bottom:15px;
+
+}
+
+button{
+background:#003366;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin:10px;
+
+}
+
+button:hover{
+background:#0055aa;
+
+}
+
+.correct{
+color:green;
+font-weight:bold;
+
+}
+
+.incorrect{
+color:red;
+font-weight:bold;
+
+}
+
+#results{
+margin-top:25px;
+padding:20px;
+background:#f8f8f8;
+border-radius:10px;
+
+}
