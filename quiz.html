@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Web Server Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Web Server Knowledge Quiz</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="modern.html">Modern</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+</nav>
+
+<main>
+<h2>Test Your Knowledge</h2>
+<p>Complete the quiz below to see how much you learned about web servers.</p>
+<form id="quizForm">
+
+<h3>1. Fill in the blank</h3>
+<p>Which protocol provides secure communication between a browser and a web server?</p>
+
+<input type="text" id="q1">
+
+<hr>
+
+<h3>2. Multiple Choice</h3>
+<p>Who created the first web server?</p>
+
+<input type="radio" name="q2" value="Bill Gates"> Bill Gates<br>
+<input type="radio" name="q2" value="Tim Berners-Lee"> Tim Berners-Lee<br>
+<input type="radio" name="q2" value="Steve Jobs"> Steve Jobs<br>
+<input type="radio" name="q2" value="Mark Zuckerberg"> Mark Zuckerberg
+
+<hr>
+
+<h3>3. Multiple Choice</h3>
+<p>Which web server solved the C10K problem?</p>
+
+<input type="radio" name="q3" value="Apache"> Apache<br>
+<input type="radio" name="q3" value="Nginx"> Nginx<br>
+<input type="radio" name="q3" value="IIS"> IIS<br>
+<input type="radio" name="q3" value="Tomcat"> Tomcat
+
+<hr>
+
+<h3>4. Multiple Choice</h3>
+<p>HTTP/3 is built on which protocol?</p>
+
+<input type="radio" name="q4" value="TCP"> TCP<br>
+<input type="radio" name="q4" value="UDP"> UDP<br>
+<input type="radio" name="q4" value="FTP"> FTP<br>
+<input type="radio" name="q4" value="SMTP"> SMTP
+
+<hr>
+
+<h3>5. Select All That Apply</h3>
+<p>Select ALL modern web server technologies.</p>
+
+<input type="checkbox" name="q5" value="Cloud Computing"> Cloud Computing<br>
+<input type="checkbox" name="q5" value="HTTP/3"> HTTP/3<br>
+<input type="checkbox" name="q5" value="Edge Computing"> Edge Computing<br>
+<input type="checkbox" name="q5" value="Floppy Disk"> Floppy Disk
+<br><br>
+<button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+<button type="reset" onclick="resetQuiz()">Reset Quiz</button>
+
+</form>
+
+<div id="results"></div>
+
+</main>
+  
+</body>
+
+<footer>
+
+<p>IT 3203 Class Project</p>
+
+</footer>
+
+<script src="quiz.js"></script>
+
+</body>
+
+</html>
