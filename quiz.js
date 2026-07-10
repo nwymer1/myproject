@@ -4,7 +4,7 @@ let results = "";
 
 //  Q1 Fill in the blank
 let q1 = document.getElementById("q1").value.trim().toUpperCase();
-if(q1=="HTTPS"){
+if (q1 == "HTTPS"){
 score++;
 results += "<p class='correct'>Question 1: Correct</p>";
 }else{
