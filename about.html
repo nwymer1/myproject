@@ -1,55 +1,189 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
+
 <body>
-  <header>
-    <div class="brand">
-      <h1>About Me</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
-    </div>
-  </header>
 
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
 
-  <main>
-    <h2>About This Project</h2>
-    <p>This website was created for IT 3203 at Kennesaw State University. The purpose of this project is to explain the evolution of web servers, how they work, and the technologies that power today's Internet.</p>
 
-    <h2>About Me</h2>
-    <p><strong>Name:</strong> Nathan Wymer</p>
-    <p><strong>Major:</strong> Information Technology</p>
-    <p><strong>School:</strong> Kennesaw State University</p>
+<header>
 
-    <p>Throughout this project I researched the history of web servers, modern server technologies, cloud computing, security, and future trends including HTTP/3 and artificial intelligence.</p>
-  </main>
+<div class="brand">
 
-  <footer>
-    <p>IT 3203 Class Project</p>
-  </footer>
+<h1>About This Project</h1>
 
-  <script src="quiz.js" defer></script>
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<nav id="mainNav">
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+
+
+<main>
+
+
+<h2>Project Information</h2>
+
+
+
+<p>
+
+This website was created for IT 3203 at Kennesaw State University.
+The purpose of this project is to explain the evolution of web servers and
+how server technologies continue to support the modern Internet.
+
+</p>
+
+
+
+
+<h2>About the Author</h2>
+
+
+
+<p>
+
+<strong>Name:</strong>
+Nathan Wymer
+
+</p>
+
+
+<p>
+
+<strong>Major:</strong>
+Information Technology
+
+</p>
+
+
+<p>
+
+<strong>University:</strong>
+Kennesaw State University
+
+</p>
+
+
+
+
+
+<h2>Project Goals</h2>
+
+
+<ul>
+
+<li>
+Explain the history and development of web servers.
+</li>
+
+
+<li>
+Research modern technologies such as cloud computing and HTTP/3.
+</li>
+
+
+<li>
+Create a responsive website that works on desktop and mobile devices.
+</li>
+
+
+<li>
+Apply HTML, CSS, and JavaScript concepts learned in IT 3203.
+</li>
+
+
+</ul>
+
+
+
+
+<h2>Responsive Design Implementation</h2>
+
+
+
+<p>
+
+The website was designed using responsive web design principles.
+CSS media queries allow the layout, navigation menu, images, tables, and quiz
+elements to adjust based on screen size.
+
+</p>
+
+
+
+<p>
+
+The goal was to create a website that provides a consistent experience for
+desktop users, tablet users, and smartphone users.
+
+</p>
+
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+
+IT 3203 Class Project | Nathan Wymer
+
+</p>
+
+</footer>
+
+
+
+
+
+<script src="quiz.js" defer></script>
+
+
+
 </body>
+
+
 </html>
