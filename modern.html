@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Servers</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Modern Web Servers</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <div class="brand">
+      <h1>Modern Web Servers</h1>
+      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
 
-<header>
-    <h1>Modern Web Servers</h1>
-</header>
-
-<nav>
+  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="history.html">History</a>
     <a href="modern.html">Modern</a>
@@ -22,58 +22,40 @@
     <a href="quiz.html">Quiz</a>
     <a href="references.html">References</a>
     <a href="about.html">About</a>
-</nav>
+  </nav>
 
-<main>
+  <main>
+    <h2>Cloud Computing</h2>
+    <p>Cloud platforms (AWS, Azure, GCP) provide scalable hosting, global distribution, and managed services for modern web servers.</p>
 
-<h2>Cloud Computing</h2>
+    <h2>HTTP/3 and QUIC</h2>
+    <p>HTTP/3 uses QUIC (a UDP-based transport) to reduce connection setup time and improve performance on lossy networks, especially mobile.</p>
 
-<p>
-Cloud computing allows organizations to host web servers on services like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). Instead of purchasing physical hardware, companies rent computing resources that can automatically scale based on website traffic.
-</p>
+    <h2>Security</h2>
+    <p>Modern servers use TLS, firewalls, WAFs, and automated patching to protect applications and user data.</p>
 
-<p>
-Cloud hosting provides high availability, lower maintenance costs, and the ability to deploy websites worldwide. This makes cloud computing the most common way to host modern websites.
-</p>
+    <h2>Edge and CDN</h2>
+    <p>CDNs and edge computing move content and compute closer to users to reduce latency and improve resilience.</p>
 
-<h2>HTTP/3 and QUIC</h2>
+    <h2>AI and Automation</h2>
+    <p>AI helps with traffic prediction, anomaly detection, and automated scaling to improve reliability and performance.</p>
+  </main>
 
-<p>
-HTTP/3 is the newest version of the HTTP protocol. Unlike previous versions, it uses QUIC instead of TCP. QUIC reduces connection time, improves reliability, and performs much better on mobile networks.
-</p>
-
-<p>
-Many popular websites are adopting HTTP/3 because it provides faster page loading and a better experience for users around the world.
-</p>
-
-<h2>Security</h2>
-
-<p>
-Modern web servers use HTTPS, SSL/TLS encryption, firewalls, authentication, and access controls to protect websites from hackers. Regular software updates and security patches help prevent attacks and protect user information.
-</p>
-
-<h2>Load Balancing</h2>
-
-<p>
-Load balancing spreads incoming traffic across multiple web servers. This prevents one server from becoming overloaded and improves website speed and reliability during periods of heavy traffic.
-</p>
-
-<h2>Edge Computing</h2>
-
-<p>
-Edge computing processes data closer to users instead of sending everything to one central server. This reduces latency and makes websites, games, and streaming services respond much faster.
-</p>
-
-<h2>Artificial Intelligence</h2>
-
-<p>
-Artificial intelligence is beginning to improve web servers by predicting traffic, detecting cyberattacks, automatically balancing workloads, and improving performance without human intervention.
-</p>
-
-</main>
-<footer>
+  <footer>
     <p>IT 3203 Class Project</p>
-</footer>
+  </footer>
 
+  <script src="quiz.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('nav-open');
+      mainNav.classList.toggle('nav-closed', !open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
+
+
