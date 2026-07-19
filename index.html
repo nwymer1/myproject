@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evolution of Web Servers - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header: site title and mobile nav button -->
   <header>
     <div class="brand">
       <h1>Evolution of Web Servers</h1>
@@ -14,6 +16,7 @@
     </div>
   </header>
 
+  <!-- Navigation: same links on every page -->
   <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="history.html">History</a>
@@ -24,12 +27,13 @@
     <a href="about.html">About</a>
   </nav>
 
+  <!-- Main content -->
   <main>
     <h2>Welcome</h2>
     <p>This site explains how web servers work, their history, and modern technologies used today.</p>
 
     <section>
-      <h3>Key Topics</h3>
+      <h3>Quick links</h3>
       <ul>
         <li><a href="history.html">History of Web Servers</a></li>
         <li><a href="modern.html">Modern Technologies</a></li>
@@ -49,10 +53,13 @@
     <p>IT 3203 Class Project</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="quiz.js" defer></script>
   <script>
+    // Simple mobile navigation toggle
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
+
     navToggle.addEventListener('click', () => {
       const open = mainNav.classList.toggle('nav-open');
       mainNav.classList.toggle('nav-closed', !open);
@@ -61,4 +68,3 @@
   </script>
 </body>
 </html>
-
