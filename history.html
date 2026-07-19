@@ -1,87 +1,259 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>History of Web Servers</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>History of Web Servers</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-  <header>
-    <div class="brand">
-      <h1>History of Web Servers</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
-    </div>
-  </header>
 
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
 
-  <main>
-    <h2>Milestones</h2>
+<header>
 
-    <article>
-      <h3>CERN HTTPd (1990)</h3>
-      <p>Created by Tim Berners-Lee; introduced the HTTP request/response model and hosted the first website.</p>
-    </article>
+<div class="brand">
 
-    <article>
-      <h3>NCSA HTTPd (1993)</h3>
-      <p>Added CGI support and easier configuration, enabling dynamic content generation.</p>
-    </article>
+<h1>History of Web Servers</h1>
 
-    <article>
-      <h3>Apache HTTP Server (1995)</h3>
-      <p>Open-source server that became widely used because of its modular design and community support.</p>
-    </article>
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
 
-    <article>
-      <h3>Nginx (2004)</h3>
-      <p>Designed for high concurrency with an event-driven architecture to handle many simultaneous connections.</p>
-    </article>
+</div>
 
-    <h3>Timeline</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Server</th>
-            <th>Why it mattered</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1990</td><td>CERN HTTPd</td><td>Introduced HTTP</td></tr>
-          <tr><td>1993</td><td>NCSA HTTPd</td><td>CGI support</td></tr>
-          <tr><td>1995</td><td>Apache</td><td>Open-source modular server</td></tr>
-          <tr><td>2004</td><td>Nginx</td><td>Event-driven, high concurrency</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
+</header>
 
-  <footer>
-    <p>IT 3203 Class Project</p>
-  </footer>
 
-  <script src="quiz.js" defer></script>
-  <script>
-   
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+
+<nav id="mainNav">
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+<main>
+
+
+<h2>The Development of Web Servers</h2>
+
+
+<p>
+The history of web servers follows the growth of the Internet. Early servers
+were created to share scientific documents. Over time they developed into
+high performance systems capable of supporting millions of users.
+</p>
+
+
+
+<article>
+
+<h3>CERN HTTPd (1990)</h3>
+
+
+<p>
+CERN HTTPd was created by Tim Berners-Lee while developing the World Wide Web.
+It introduced the HTTP request and response system that allows browsers and
+servers to communicate.
+</p>
+
+
+</article>
+
+
+
+
+<article>
+
+<h3>NCSA HTTPd (1993)</h3>
+
+
+<p>
+NCSA HTTPd improved web server functionality by introducing CGI support.
+This allowed websites to generate dynamic content instead of only displaying
+static files.
+</p>
+
+
+</article>
+
+
+
+
+<article>
+
+<h3>Apache HTTP Server (1995)</h3>
+
+
+<p>
+Apache became one of the most popular web servers because it was open source,
+free to use, and highly customizable. Its modular design allowed developers
+to add additional features including security and authentication tools.
+</p>
+
+
+</article>
+
+
+
+
+<article>
+
+<h3>Nginx (2004)</h3>
+
+
+<p>
+Nginx was created to solve performance problems caused by increasing Internet
+traffic. Its event driven architecture allowed it to handle many connections
+using fewer system resources.
+</p>
+
+
+</article>
+
+
+
+
+<article>
+
+<h3>Cloud Based Web Servers</h3>
+
+
+<p>
+Modern web servers moved from physical hardware to cloud platforms. Cloud
+services allow companies to quickly increase server resources when traffic
+increases. This improves reliability and reduces maintenance costs.
+</p>
+
+
+</article>
+
+
+
+
+
+<h3>Important Timeline</h3>
+
+
+
+<div class="table-wrap">
+
+
+<table>
+
+
+<tr>
+
+<th>Year</th>
+
+<th>Technology</th>
+
+<th>Importance</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>1990</td>
+
+<td>CERN HTTPd</td>
+
+<td>Created the foundation of web communication.</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>1993</td>
+
+<td>NCSA HTTPd</td>
+
+<td>Introduced dynamic website support.</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>1995</td>
+
+<td>Apache</td>
+
+<td>Became a major open source web server.</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>2004</td>
+
+<td>Nginx</td>
+
+<td>Improved performance and scalability.</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>Today</td>
+
+<td>Cloud Servers</td>
+
+<td>Provide flexible and scalable hosting.</td>
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+IT 3203 Class Project | Nathan Wymer
+</p>
+
+</footer>
+
+
+
+<script src="quiz.js" defer></script>
+
+
 </body>
+
 </html>
