@@ -1,5 +1,13 @@
 function gradeQuiz() {
 
+let answer = document.getElementById("q1");
+
+if(answer.value.trim() === ""){
+alert("Please answer Question 1.");
+answer.focus();
+return;
+}
+    
 let score = 0;
 let results = "";
 
