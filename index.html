@@ -1,81 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Evolution of Web Servers</title>
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Evolution of Web Servers - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <div class="brand">
+      <h1>Evolution of Web Servers</h1>
+      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
 
-<header>
-  <h1>Evolution of Web Servers</h1>
-  <p>
-    This website explains how web servers work, their history, 
-    and modern technology used today.
-  </p>
-</header>
+  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="modern.html">Modern</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="history.html">History</a>
-  <a href="modern.html">Modern</a>
-  <a href="concepts.html">Key Concepts</a>
-  <a href="quiz.html">Quiz</a>
-  <a href="references.html">References</a>
-  <a href="about.html">About</a>
-</nav>
+  <main>
+    <h2>Welcome</h2>
+    <p>This site explains how web servers work, their history, and modern technologies used today.</p>
 
-<main>
+    <section>
+      <h3>Key Topics</h3>
+      <ul>
+        <li><a href="history.html">History of Web Servers</a></li>
+        <li><a href="modern.html">Modern Technologies</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </section>
 
-  <h2>Welcome</h2>
+    <figure>
+      <img src="server.jpg" alt="Illustration of a web server" class="responsive-img">
+      <figcaption>Web servers deliver web pages and files to users.</figcaption>
+    </figure>
+  </main>
 
-  <p>
-    Web servers are systems that deliver websites to users.
-    They respond to browser requests and send back web pages, images, and data.
-  </p>
+  <footer>
+    <p>IT 3203 Class Project</p>
+  </footer>
 
-  <h2>Key Topics</h2>
-
-<ul>
-    <li><a href="history.html">History of Web Servers</a></li>
-    <li><a href="modern.html">Modern Technologies</a></li>
-    <li><a href="concepts.html">Key Concepts</a></li>
-    <li><a href="quiz.html">Quiz</a></li>
-    <li><a href="references.html">References</a></li>
-</ul>
-
-<h2>Why Web Servers Matter</h2>
-
-<p>
-
-Every website on the Internet depends on a web server. Web servers receive requests from users, process those requests, and return web pages, images, videos, and other files. Modern web servers also support cloud computing, online shopping, streaming services, and mobile applications. Understanding how web servers have evolved helps explain how today's Internet became faster, more secure, and more reliable.
-
-</p>
-
-  <h2>Table of Contents</h2>
-
-  <ol>
-    <li>History</li>
-    <li>Modern Web Servers</li>
-    <li>Key Concepts</li>
-    <li>References</li>
-    <li>About</li>
-  </ol>
-
-  <img src="server.jpg" alt="Web Server Image" width="400">
-  
-</main>
-
-<footer>
-  <p>IT 3203 Class Project</p>
-  <p>
-    Course Website:
-    <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
-  </p>
-</footer>
-  
+  <script src="quiz.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('nav-open');
+      mainNav.classList.toggle('nav-closed', !open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
+
