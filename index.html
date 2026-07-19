@@ -1,70 +1,172 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Evolution of Web Servers - Home</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Evolution of Web Servers</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-  <!-- Header: site title and mobile nav button -->
-  <header>
-    <div class="brand">
-      <h1>Evolution of Web Servers</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
-    </div>
-  </header>
 
-  <!-- Navigation: same links on every page -->
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
+<header>
 
-  <!-- Main content -->
-  <main>
-    <h2>Welcome</h2>
-    <p>This site explains how web servers work, their history, and modern technologies used today.</p>
+<div class="brand">
 
-    <section>
-      <h3>Quick links</h3>
-      <ul>
-        <li><a href="history.html">History of Web Servers</a></li>
-        <li><a href="modern.html">Modern Technologies</a></li>
-        <li><a href="concepts.html">Key Concepts</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
-    </section>
+<h1>Evolution of Web Servers</h1>
 
-    <figure>
-      <img src="server.jpg" alt="Illustration of a web server" class="responsive-img">
-      <figcaption>Web servers deliver web pages and files to users.</figcaption>
-    </figure>
-  </main>
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
 
-  <footer>
-    <p>IT 3203 Class Project</p>
-  </footer>
+</div>
 
-  <!-- Scripts -->
-  <script src="quiz.js" defer></script>
-  <script>
-    // Simple mobile navigation toggle
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
+</header>
 
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+
+
+<nav id="mainNav">
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+<main>
+
+
+<h2>Welcome to the Evolution of Web Servers</h2>
+
+
+<p>
+Web servers are one of the most important technologies behind the Internet.
+They allow browsers to request information and receive webpages, images, videos,
+and applications. This website explains how web servers developed from the first
+HTTP servers into the powerful cloud based systems used today.
+</p>
+
+
+
+<section>
+
+<h3>What is a Web Server?</h3>
+
+<p>
+A web server is software and hardware that stores website files and delivers
+content to users through HTTP or HTTPS requests. When a user enters a website
+address into a browser the browser sends a request to the server. The server
+processes the request and returns the required information.
+</p>
+
+</section>
+
+
+
+<section>
+
+<h3>Project Topics</h3>
+
+
+<ul>
+
+<li>
+<a href="history.html">
+History of Web Servers
+</a>
+- Learn about the development of HTTP and major web server technologies.
+</li>
+
+
+<li>
+<a href="modern.html">
+Modern Web Server Technologies
+</a>
+- Explore cloud computing, HTTP/3, security, and future trends.
+</li>
+
+
+<li>
+<a href="concepts.html">
+Key Web Server Concepts
+</a>
+- Understand important networking and server terms.
+</li>
+
+
+<li>
+<a href="quiz.html">
+Knowledge Quiz
+</a>
+- Test your understanding of web server technologies.
+</li>
+
+
+</ul>
+
+</section>
+
+
+
+
+<figure>
+
+<img src="server.jpg" 
+alt="Computer servers representing web hosting technology"
+class="responsive-img">
+
+
+<figcaption>
+Web servers deliver online content to users around the world.
+</figcaption>
+
+</figure>
+
+
+
+<section>
+
+<h3>Why Web Servers Matter</h3>
+
+
+<p>
+Modern businesses depend on reliable web servers for websites, online stores,
+cloud applications, and digital services. Performance, security, and scalability
+are important factors when designing modern server environments.
+</p>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+IT 3203 Class Project | Nathan Wymer
+</p>
+
+</footer>
+
+
+
+<script src="quiz.js" defer></script>
+
 </body>
+
 </html>
