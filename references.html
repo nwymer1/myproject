@@ -1,60 +1,292 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>References</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>References</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
+
 <body>
-  <header>
-    <div class="brand">
-      <h1>References</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
-    </div>
-  </header>
 
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
 
-  <main>
-    <h2>References</h2>
-    <ul>
-      <li><a href="https://httpd.apache.org/" target="_blank" rel="noopener">Apache HTTP Server Project</a> — official docs for Apache.</li>
-      <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a> — HTML/CSS/JS references.</li>
-      <li><a href="https://nginx.org/" target="_blank" rel="noopener">Nginx Documentation</a> — Nginx features and config.</li>
-      <li><a href="https://www.cloudflare.com/learning/" target="_blank" rel="noopener">Cloudflare Learning Center</a> — HTTP/3 and CDN guides.</li>
-      <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a> — quick examples.</li>
-      <li><a href="https://www.netcraft.com/" target="_blank" rel="noopener">Netcraft Web Server Survey</a> — market share data.</li>
-      <li><a href="https://www.fastly.com/products/quic-http-3" target="_blank" rel="noopener">Fastly HTTP/3 Guide</a> — HTTP/3 practical notes.</li>
-      <li><a href="https://datatracker.ietf.org/wg/quic/about/" target="_blank" rel="noopener">IETF QUIC Working Group</a> — QUIC RFCs and specs.</li>
-      <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev (Google)</a> — performance and accessibility best practices.</li>
-      <li><a href="https://developer.chrome.com/docs/" target="_blank" rel="noopener">Chrome Developers</a> — DevTools and testing guides.</li>
-    </ul>
-  </main>
 
-  <footer>
-    <p>IT 3203 Class Project</p>
-  </footer>
+<header>
 
-  <script src="quiz.js" defer></script>
-  <script>
-    // Mobile nav toggle (same code on every page)
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+<div class="brand">
+
+<h1>References</h1>
+
+
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
+
+
+</div>
+
+</header>
+
+
+
+
+<nav id="mainNav">
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+
+
+<main>
+
+
+<h2>Research References</h2>
+
+
+<p>
+The following resources were used to research web server history, modern server
+technologies, responsive web design, networking concepts, and Internet standards.
+</p>
+
+
+
+<ul class="references">
+
+
+<li>
+
+<a href="https://httpd.apache.org/" target="_blank">
+Apache HTTP Server Project
+</a>
+
+<p>
+Used to research Apache history, open-source development, server modules,
+and web hosting technologies.
+</p>
+
+</li>
+
+
+
+
+<li>
+
+<a href="https://developer.mozilla.org/" target="_blank">
+MDN Web Docs
+</a>
+
+<p>
+Used for information about HTML, CSS, JavaScript, and modern web development
+standards.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://nginx.org/" target="_blank">
+Nginx Documentation
+</a>
+
+<p>
+Used to research Nginx architecture, performance improvements, and server
+configuration features.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://www.cloudflare.com/learning/" target="_blank">
+Cloudflare Learning Center
+</a>
+
+<p>
+Used for research about HTTP, HTTPS, DNS, caching, CDN technology, and web
+security.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://www.w3schools.com/" target="_blank">
+W3Schools
+</a>
+
+<p>
+Used as a learning reference for HTML, CSS, JavaScript, and responsive design
+examples.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://www.netcraft.com/" target="_blank">
+Netcraft Web Server Survey
+</a>
+
+<p>
+Used for information about web server market trends and technology usage.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://www.fastly.com/products/quic-http-3" target="_blank">
+Fastly HTTP/3 Guide
+</a>
+
+<p>
+Used to research HTTP/3, QUIC, and improvements in modern web performance.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://datatracker.ietf.org/wg/quic/about/" target="_blank">
+IETF QUIC Working Group
+</a>
+
+<p>
+Used for official information about QUIC standards and Internet protocols.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://web.dev/" target="_blank">
+Google web.dev
+</a>
+
+<p>
+Used for responsive web design, accessibility, and website performance best
+practices.
+</p>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="https://developer.chrome.com/docs/" target="_blank">
+Chrome Developers
+</a>
+
+<p>
+Used for browser testing, developer tools, and website debugging information.
+</p>
+
+</li>
+
+
+
+</ul>
+
+
+
+
+<h2>Additional Academic Sources</h2>
+
+
+<ul>
+
+
+<li>
+
+Berners-Lee, T. 
+(1999).
+Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web.
+
+</li>
+
+
+<li>
+
+Kurose, J., & Ross, K.
+Computer Networking: A Top-Down Approach.
+
+</li>
+
+
+</ul>
+
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+IT 3203 Class Project | Nathan Wymer
+</p>
+
+</footer>
+
+
+
+
+<script src="quiz.js" defer></script>
+
+
 </body>
+
+
 </html>
