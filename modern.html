@@ -1,62 +1,188 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modern Web Servers</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Modern Web Servers</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-  <header>
-    <div class="brand">
-      <h1>Modern Web Servers</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
-    </div>
-  </header>
 
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
 
-  <main>
-    <h2>Cloud Computing</h2>
-    <p>Cloud platforms (AWS, Azure, GCP) provide scalable hosting and global distribution.</p>
+<header>
 
-    <h2>HTTP/3 and QUIC</h2>
-    <p>HTTP/3 uses QUIC (UDP-based) to reduce connection setup time and improve performance on mobile networks.</p>
+<div class="brand">
 
-    <h2>Security</h2>
-    <p>Modern servers use TLS, firewalls, and automated patching to protect data and services.</p>
+<h1>Modern Web Servers</h1>
 
-    <h2>Edge and CDN</h2>
-    <p>CDNs and edge computing move content closer to users to reduce latency.</p>
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
 
-    <h2>AI and Automation</h2>
-    <p>AI helps with traffic prediction, anomaly detection, and automated scaling.</p>
-  </main>
+</div>
 
-  <footer>
-    <p>IT 3203 Class Project</p>
-  </footer>
+</header>
 
-  <script src="quiz.js" defer></script>
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+
+
+<nav id="mainNav">
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+<main>
+
+
+<h2>Current Web Server Technologies</h2>
+
+
+<p>
+Modern web servers focus on speed, security, scalability, and reliability.
+Businesses use advanced technologies to support websites and applications
+used by millions of people.
+</p>
+
+
+
+<section>
+
+<h3>Cloud Computing</h3>
+
+
+<p>
+Cloud platforms such as Amazon Web Services, Microsoft Azure, and Google Cloud
+allow organizations to host websites without managing physical hardware.
+Cloud servers can automatically increase resources when demand increases.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h3>HTTP/3 and QUIC</h3>
+
+
+<p>
+HTTP/3 is the newest version of the HTTP protocol. It uses QUIC instead of
+traditional TCP connections. This improves connection speed and reliability
+especially for mobile users.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h3>Security Improvements</h3>
+
+
+<p>
+Modern servers use HTTPS encryption, firewalls, authentication systems,
+regular updates, and monitoring tools to protect websites and user data.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h3>Content Delivery Networks and Edge Computing</h3>
+
+
+<p>
+Content Delivery Networks place copies of website files in different locations
+around the world. This allows users to access content from servers closer to
+their location which improves loading speed.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h3>Artificial Intelligence and Automation</h3>
+
+
+<p>
+Artificial intelligence is becoming more common in server management.
+AI can detect unusual activity, predict traffic patterns, and automate server
+maintenance tasks.
+</p>
+
+
+</section>
+
+
+
+
+<section>
+
+<h3>Future Web Server Development</h3>
+
+
+<p>
+Future web servers will continue improving through faster networking,
+automation, artificial intelligence, and stronger security methods.
+Technologies such as HTTP/3 and edge computing will help create faster and
+more reliable Internet experiences.
+</p>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+IT 3203 Class Project | Nathan Wymer
+</p>
+
+</footer>
+
+
+
+<script src="quiz.js" defer></script>
+
+
 </body>
-</html>
 
+
+</html>
 
