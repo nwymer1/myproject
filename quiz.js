@@ -1,10 +1,34 @@
 function gradeQuiz() {
 
-let answer = document.getElementById("q1");
+let q1 = document.getElementById("q1");
+let q2 = document.querySelector("input[name='q2']:checked");
+let q3 = document.querySelector("input[name='q3']:checked");
+let q4 = document.querySelector("input[name='q4']:checked");
+let q5 = document.querySelectorAll("input[name='q5']:checked");
 
-if(answer.value.trim() === ""){
+if(q1.value.trim()==""){
 alert("Please answer Question 1.");
-answer.focus();
+q1.focus();
+return;
+}
+
+if(!q2){
+alert("Please answer Question 2.");
+return;
+}
+
+if(!q3){
+alert("Please answer Question 3.");
+return;
+}
+
+if(!q4){
+alert("Please answer Question 4.");
+return;
+}
+
+if(q5.length==0){
+alert("Please answer Question 5.");
 return;
 }
     
