@@ -1,101 +1,399 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Web Server Quiz</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Web Server Quiz</title>
+
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
+
 <body>
-  <header>
-    <div class="brand">
-      <h1>Web Server Quiz</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
-    </div>
-  </header>
 
-  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="modern.html">Modern</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About</a>
-  </nav>
 
-  <main>
-    <h2>Self Assessment Quiz</h2>
-    <form id="quizForm" onsubmit="return false;">
-      <div class="question">
-        <label for="q1"><strong>Q1.</strong> Which protocol securely transfers web pages?</label>
-        <input type="text" id="q1" name="q1" placeholder="Type your answer">
-      </div>
+<header>
 
-      <hr>
+<div class="brand">
 
-      <div class="question">
-        <p><strong>Q2.</strong> Who created the first web server?</p>
-        <label><input type="radio" name="q2" value="Bill Gates"> Bill Gates</label><br>
-        <label><input type="radio" name="q2" value="Tim Berners-Lee"> Tim Berners-Lee</label><br>
-        <label><input type="radio" name="q2" value="Steve Jobs"> Steve Jobs</label><br>
-        <label><input type="radio" name="q2" value="Mark Zuckerberg"> Mark Zuckerberg</label>
-      </div>
+<h1>Web Server Quiz</h1>
 
-      <hr>
 
-      <div class="question">
-        <p><strong>Q3.</strong> Which web server solved the C10K problem?</p>
-        <label><input type="radio" name="q3" value="Apache"> Apache</label><br>
-        <label><input type="radio" name="q3" value="Nginx"> Nginx</label><br>
-        <label><input type="radio" name="q3" value="IIS"> IIS</label><br>
-        <label><input type="radio" name="q3" value="Tomcat"> Tomcat</label>
-      </div>
+<button id="navToggle" aria-label="Open navigation">
+☰
+</button>
 
-      <hr>
 
-      <div class="question">
-        <p><strong>Q4.</strong> HTTP/3 uses which protocol?</p>
-        <label><input type="radio" name="q4" value="TCP"> TCP</label><br>
-        <label><input type="radio" name="q4" value="QUIC"> QUIC</label><br>
-        <label><input type="radio" name="q4" value="FTP"> FTP</label><br>
-        <label><input type="radio" name="q4" value="SMTP"> SMTP</label>
-      </div>
+</div>
 
-      <hr>
 
-      <div class="question">
-        <p><strong>Q5.</strong> Select all modern web server technologies:</p>
-        <label><input type="checkbox" name="q5" value="Cloud Computing"> Cloud Computing</label><br>
-        <label><input type="checkbox" name="q5" value="HTTP/3"> HTTP/3</label><br>
-        <label><input type="checkbox" name="q5" value="Edge Computing"> Edge Computing</label><br>
-        <label><input type="checkbox" name="q5" value="Floppy Disk"> Floppy Disk</label>
-      </div>
+</header>
 
-      <div class="form-actions">
-        <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
-        <button type="button" onclick="resetQuiz()">Reset Quiz</button>
-      </div>
-    </form>
 
-    <div id="results" aria-live="polite"></div>
-  </main>
 
-  <footer>
-    <p>IT 3203 Class Project | Nathan Wymer</p>
-  </footer>
+<nav id="mainNav">
 
-  <script src="quiz.js" defer></script>
-  <script>
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const open = mainNav.classList.toggle('nav-open');
-      mainNav.classList.toggle('nav-closed', !open);
-      navToggle.setAttribute('aria-expanded', open);
-    });
-  </script>
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="modern.html">Modern</a>
+<a href="concepts.html">Key Concepts</a>
+<a href="quiz.html">Quiz</a>
+<a href="references.html">References</a>
+<a href="about.html">About</a>
+
+</nav>
+
+
+
+
+<main>
+
+
+<h2>Knowledge Assessment</h2>
+
+
+<p>
+Test your understanding of web servers and modern Internet technologies.
+All questions must be completed before submitting.
+</p>
+
+
+
+
+<form id="quizForm">
+
+
+
+<div class="question">
+
+
+<label for="q1">
+
+<strong>Question 1:</strong>
+Which protocol securely transfers webpages?
+
+</label>
+
+
+<input 
+type="text"
+id="q1"
+name="q1"
+placeholder="Enter answer"
+required>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="question">
+
+
+<p>
+<strong>Question 2:</strong>
+Who created the World Wide Web?
+</p>
+
+
+
+<label>
+<input type="radio" name="q2" value="Bill Gates" required>
+Bill Gates
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q2" value="Tim Berners-Lee">
+Tim Berners-Lee
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q2" value="Steve Jobs">
+Steve Jobs
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q2" value="Mark Zuckerberg">
+Mark Zuckerberg
+</label>
+
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="question">
+
+
+<p>
+<strong>Question 3:</strong>
+Which web server is known for solving the C10K problem?
+</p>
+
+
+
+<label>
+<input type="radio" name="q3" value="Apache" required>
+Apache
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q3" value="Nginx">
+Nginx
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q3" value="IIS">
+IIS
+</label>
+
+
+<br>
+
+
+<label>
+<input type="radio" name="q3" value="Tomcat">
+Tomcat
+</label>
+
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="question">
+
+
+<p>
+
+<strong>Question 4:</strong>
+HTTP/3 uses which protocol?
+
+</p>
+
+
+
+<label>
+
+<input type="radio" name="q4" value="TCP" required>
+
+TCP
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q4" value="QUIC">
+
+QUIC
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q4" value="FTP">
+
+FTP
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q4" value="SMTP">
+
+SMTP
+
+</label>
+
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+
+<div class="question">
+
+
+<p>
+
+<strong>Question 5:</strong>
+Select all modern web server technologies.
+
+</p>
+
+
+
+<label>
+
+<input type="checkbox" name="q5" value="Cloud Computing">
+
+Cloud Computing
+
+</label>
+
+
+<br>
+
+
+
+<label>
+
+<input type="checkbox" name="q5" value="HTTP/3">
+
+HTTP/3
+
+</label>
+
+
+<br>
+
+
+
+<label>
+
+<input type="checkbox" name="q5" value="Edge Computing">
+
+Edge Computing
+
+</label>
+
+
+<br>
+
+
+
+<label>
+
+<input type="checkbox" name="q5" value="Floppy Disk">
+
+Floppy Disk
+
+</label>
+
+
+
+</div>
+
+
+
+
+<div class="form-actions">
+
+
+<button type="submit">
+Submit Quiz
+</button>
+
+
+
+<button type="button" onclick="resetQuiz()">
+
+Reset
+
+</button>
+
+
+
+</div>
+
+
+
+</form>
+
+
+
+<div id="results"></div>
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+IT 3203 Class Project | Nathan Wymer
+</p>
+
+</footer>
+
+
+
+
+<script src="quiz.js" defer></script>
+
+
 </body>
+
+
 </html>
