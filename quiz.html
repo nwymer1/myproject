@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Web Server Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="brand">
-      <h1>Web Server Knowledge Quiz</h1>
-      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
+      <h1>Web Server Quiz</h1>
+      <button id="navToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
     </div>
   </header>
 
@@ -27,22 +27,16 @@
 
   <main>
     <h2>Self Assessment Quiz</h2>
-    <p>Complete the quiz below. Your score and correct answers appear immediately after you submit.</p>
-
     <form id="quizForm" onsubmit="return false;">
-      <!-- Question 1 -->
       <div class="question">
-        <h3>Question 1 (Fill in the Blank)</h3>
-        <label for="q1">Which protocol securely transfers web pages?</label>
+        <label for="q1"><strong>Q1.</strong> Which protocol securely transfers web pages?</label>
         <input type="text" id="q1" name="q1" placeholder="Type your answer">
       </div>
 
       <hr>
 
-      <!-- Question 2 -->
       <div class="question">
-        <h3>Question 2 (Multiple Choice)</h3>
-        <p>Who created the first web server?</p>
+        <p><strong>Q2.</strong> Who created the first web server?</p>
         <label><input type="radio" name="q2" value="Bill Gates"> Bill Gates</label><br>
         <label><input type="radio" name="q2" value="Tim Berners-Lee"> Tim Berners-Lee</label><br>
         <label><input type="radio" name="q2" value="Steve Jobs"> Steve Jobs</label><br>
@@ -51,10 +45,8 @@
 
       <hr>
 
-      <!-- Question 3 -->
       <div class="question">
-        <h3>Question 3 (Multiple Choice)</h3>
-        <p>Which web server solved the C10K problem?</p>
+        <p><strong>Q3.</strong> Which web server solved the C10K problem?</p>
         <label><input type="radio" name="q3" value="Apache"> Apache</label><br>
         <label><input type="radio" name="q3" value="Nginx"> Nginx</label><br>
         <label><input type="radio" name="q3" value="IIS"> IIS</label><br>
@@ -63,10 +55,8 @@
 
       <hr>
 
-      <!-- Question 4 -->
       <div class="question">
-        <h3>Question 4 (Multiple Choice)</h3>
-        <p>HTTP/3 uses which protocol?</p>
+        <p><strong>Q4.</strong> HTTP/3 uses which protocol?</p>
         <label><input type="radio" name="q4" value="TCP"> TCP</label><br>
         <label><input type="radio" name="q4" value="QUIC"> QUIC</label><br>
         <label><input type="radio" name="q4" value="FTP"> FTP</label><br>
@@ -75,10 +65,8 @@
 
       <hr>
 
-      <!-- Question 5 -->
       <div class="question">
-        <h3>Question 5 (Select All That Apply)</h3>
-        <p>Select every modern web server technology.</p>
+        <p><strong>Q5.</strong> Select all modern web server technologies:</p>
         <label><input type="checkbox" name="q5" value="Cloud Computing"> Cloud Computing</label><br>
         <label><input type="checkbox" name="q5" value="HTTP/3"> HTTP/3</label><br>
         <label><input type="checkbox" name="q5" value="Edge Computing"> Edge Computing</label><br>
@@ -100,6 +88,7 @@
 
   <script src="quiz.js" defer></script>
   <script>
+    // Mobile nav toggle
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
     navToggle.addEventListener('click', () => {
@@ -110,4 +99,3 @@
   </script>
 </body>
 </html>
-
