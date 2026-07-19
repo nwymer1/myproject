@@ -1,104 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>History</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>History of Web Servers</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <div class="brand">
+      <h1>History of Web Servers</h1>
+      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
 
-<header>
-  <h1>History of Web Servers</h1>
-</header>
+  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="modern.html">Modern</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="history.html">History</a>
-  <a href="modern.html">Modern</a>
-  <a href="concepts.html">Key Concepts</a>
-  <a href="quiz.html">Quiz</a>
-  <a href="references.html">References</a>
-  <a href="about.html">About</a>
-</nav>
+  <main>
+    <h2>Milestones</h2>
 
-<main>
+    <article>
+      <h3>CERN HTTPd (1990)</h3>
+      <p>The first web server created by Tim Berners-Lee introduced the HTTP request/response model and hosted the first website.</p>
+    </article>
 
-<h2>CERN HTTPd (1990)</h2>
-<p>
-  The first web server was created by Tim Berners-Lee at CERN, and it introduced the HTTP request/response model and hosted the
-  first website. This single-host model established the client/server pattern that underpins the web today.
-</p>
+    <article>
+      <h3>NCSA HTTPd (1993)</h3>
+      <p>NCSA HTTPd added CGI support and easier configuration enabling dynamic content generation and wider adoption.</p>
+    </article>
 
-<h2>NCSA HTTPd (1993)</h2>
-<p>
-  NCSA HTTPd added CGI support and easier configuration which enabled dynamic content generation and wider adoption.
-  Its code and ideas were the foundation for later servers.
-</p>
+    <article>
+      <h3>Apache HTTP Server (1995)</h3>
+      <p>Apache grew from community patches and became the dominant open-source server due to modularity and cross-platform support.</p>
+    </article>
 
-<h2>Apache HTTP Server (1995)</h2>
-<p>
-  Apache grew from patches to NCSA HTTPd and became the dominant open-source server in the late 1990s due to its 
-  modular architecture, community support, and cross platform stability.
-</p>
+    <article>
+      <h3>Nginx and the C10K problem (2004)</h3>
+      <p>Nginx used an event-driven architecture to handle many simultaneous connections with low memory usage.</p>
+    </article>
 
-<h2>Nginx and the C10K problem (2004)</h2>
-<p>
-  Nginx was designed to handle many simultaneous connections with an event driven architecture. This made it ideal for 
-  high concurrency and low memory environments.
-</p>
+    <h3>Timeline</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Year</th><th>Server</th><th>Why it mattered</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1990</td><td>CERN HTTPd</td><td>Introduced HTTP and the first website</td></tr>
+          <tr><td>1993</td><td>NCSA HTTPd</td><td>CGI and easier configuration</td></tr>
+          <tr><td>1995</td><td>Apache</td><td>Open-source modular server</td></tr>
+          <tr><td>2004</td><td>Nginx</td><td>Event-driven with high concurrency</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-<h2>Timeline</h2>
-<table border="1">
-<tr>
-  <th>Year</th>
-  <th>Server</th>
-  <th>Why it mattered</th>
-</tr>
-<tr>
-  <td>1990</td>
-  <td>CERN HTTPd</td>
-  <td>Introduced HTTP and the first website</td>
-</tr>
-<tr>
-  <td>1993</td>
-  <td>NCSA HTTPd</td>
-  <td>CGI and easier configuration</td>
-</tr>
-<tr>
-  <td>1995</td>
-  <td>Apache</td>
-  <td>Open-source modular server</td>
-</tr>
-<tr>
-  <td>2004</td>
-  <td>Nginx</td>
-  <td>Event driven with high concurrency</td>
-</tr>
-</table>
+    <section>
+      <h3>Why these milestones matter</h3>
+      <p>Each milestone introduced capabilities that shaped modern server design: protocol model, dynamic content, extensibility, and high concurrency.</p>
+    </section>
+  </main>
 
-<section>
-  <h3>Why these milestones matter</h3>
-  <p>
-    Each milestone introduced a core capability: the HTTP model (CERN), dynamic content (NCSA), extensibility and
-    community development (Apache), and high concurrency and event driven design (Nginx). These shaped how servers are 
-    built and deployed today.
-  </p>
-</section>
+  <footer>
+    <p>IT 3203 Class Project</p>
+  </footer>
 
-<section>
-  <h2>History Summary</h2>
-  <p>
-    The development of web servers transformed the Internet from a simple document-sharing system into a global platform supporting billions of users. Each generation of web server software introduced faster performance, improved security, and better scalability. Modern web servers continue to evolve as cloud computing and artificial intelligence become increasingly important.
-  </p>
-</section>
-  
-</main>
-
-<footer>
-  <p>IT 3203 Class Project</p>
-</footer>
-
+  <script src="quiz.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('nav-open');
+      mainNav.classList.toggle('nav-closed', !open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
