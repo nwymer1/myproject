@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <div class="brand">
+      <h1>About Me</h1>
+      <button id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
 
-<header>
-    <h1>About Me</h1>
-</header>
-
-<nav>
+  <nav id="mainNav" class="nav-closed" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="history.html">History</a>
     <a href="modern.html">Modern</a>
@@ -20,32 +22,33 @@
     <a href="quiz.html">Quiz</a>
     <a href="references.html">References</a>
     <a href="about.html">About</a>
-</nav>
+  </nav>
 
-<main>
+  <main>
+    <h2>About This Project</h2>
+    <p>This website was created for IT 3203 at Kennesaw State University. The purpose of this project is to explain the evolution of web servers, how they work, and the technologies that power today's Internet.</p>
 
-<h2>About This Project</h2>
+    <h2>About Me</h2>
+    <p><strong>Name:</strong> Nathan Wymer</p>
+    <p><strong>Major:</strong> Information Technology</p>
+    <p><strong>School:</strong> Kennesaw State University</p>
 
-<p>
-This website was created for IT 3203 at Kennesaw State University. The purpose of this project is to explain the evolution of web servers, how they work, and the technologies that power today's Internet.
-</p>
+    <p>Throughout this project I researched the history of web servers, modern server technologies, cloud computing, security, and future trends including HTTP/3 and artificial intelligence.</p>
+  </main>
 
-<h2>About Me</h2>
-
-<p><strong>Name:</strong> Nathan Wymer</p>
-
-<p><strong>Major:</strong> Information Technology</p>
-
-<p><strong>School:</strong> Kennesaw State University</p>
-
-<p>
-Throughout this project I researched the history of web servers, modern server technologies, cloud computing, security, and future trends including HTTP/3 and artificial intelligence.
-</p>
-
-</main>
-<footer>
+  <footer>
     <p>IT 3203 Class Project</p>
-</footer>
+  </footer>
 
+  <script src="quiz.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const open = mainNav.classList.toggle('nav-open');
+      mainNav.classList.toggle('nav-closed', !open);
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
